@@ -28,6 +28,9 @@ namespace AdvancedEShop
         {
             services.AddControllersWithViews();
 
+            // làm chức năng giỏ hàng session
+            services.AddDistributedMemoryCache();
+            services.AddSession();
 
 
             // Kết nối bảo mật tránh lộ thông tin
@@ -50,6 +53,8 @@ namespace AdvancedEShop
             }
             app.UseHttpsRedirection();
             app.UseStaticFiles();
+            // làm chức năng giỏ hàng session
+            app.UseSession();
 
             app.UseRouting();
 

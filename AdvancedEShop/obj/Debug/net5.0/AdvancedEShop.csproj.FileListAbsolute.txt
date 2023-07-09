@@ -152,3 +152,16 @@ C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Vi
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Categories\Edit.cshtml.g.cs
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Categories\Index.cshtml.g.cs
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\Components\Navbar\Default.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\Components\ImageBar\Index.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Products\Create.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Products\Delete.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Products\Details.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Products\Edit.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Products\Index.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\Components\Trandy\Default.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\Components\JustArrived\Default.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\_Product.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\Components\ProductsStart\Default.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Cart\Cart.cshtml.g.cs
