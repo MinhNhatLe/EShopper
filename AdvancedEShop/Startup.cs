@@ -11,6 +11,8 @@ using System.Threading.Tasks;
 using AdvancedEShop.Models.Entities;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.AspNetCore.Identity;
+//using Microsoft.AspNetCore.Identity.UI;
 
 namespace AdvancedEShop
 {
@@ -36,6 +38,10 @@ namespace AdvancedEShop
             // Kết nối bảo mật tránh lộ thông tin
             var connectionString = Configuration.GetConnectionString("LMNCoreProjectDatabase");
             services.AddDbContext<AdvancedEshopContext>(options => options.UseSqlServer(connectionString));
+
+            //login
+            //services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true)
+            //    .AddEntityFrameworkStores<AdvancedEshopContext>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -57,6 +63,11 @@ namespace AdvancedEShop
             app.UseSession();
 
             app.UseRouting();
+
+
+            ///11
+            app.UseAuthentication();
+            
 
             app.UseAuthorization();
 

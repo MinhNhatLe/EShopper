@@ -165,3 +165,5 @@ C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Vi
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\_LoginPartial.cshtml.g.cs
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Areas\Identity\Pages\_ViewStart.cshtml.g.cs
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Cart\Cart.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\Components\CartWidget\Default.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\_ReturnProducts.cshtml.g.cs
