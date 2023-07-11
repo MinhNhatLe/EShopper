@@ -21,6 +21,7 @@ namespace AdvancedEShop.Models.Entities
         public virtual DbSet<Color> Colors { get; set; }
         public virtual DbSet<Product> Products { get; set; }
         public virtual DbSet<Size> Sizes { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
 //        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
 //        {
@@ -40,11 +41,27 @@ namespace AdvancedEShop.Models.Entities
                 entity.Property(e => e.CategoryName).HasMaxLength(150);
 
                 entity.Property(e => e.CategoryPhoto).HasMaxLength(300);
+
+                entity.Property(e => e.IdUser).HasColumnName("ID_User");
+
+                entity.HasOne(d => d.IdUserNavigation)
+                    .WithMany(p => p.Categories)
+                    .HasForeignKey(d => d.IdUser)
+                    .OnDelete(DeleteBehavior.SetNull)
+                    .HasConstraintName("FK_Categories_User");
             });
 
             modelBuilder.Entity<Color>(entity =>
             {
                 entity.Property(e => e.ColorName).HasMaxLength(30);
+
+                entity.Property(e => e.IdUser).HasColumnName("ID_User");
+
+                entity.HasOne(d => d.IdUserNavigation)
+                    .WithMany(p => p.Colors)
+                    .HasForeignKey(d => d.IdUser)
+                    .OnDelete(DeleteBehavior.SetNull)
+                    .HasConstraintName("FK_Colors_User");
             });
 
             modelBuilder.Entity<Product>(entity =>
@@ -62,25 +79,61 @@ namespace AdvancedEShop.Models.Entities
                 entity.HasOne(d => d.Category)
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.CategoryId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Products_Categories");
 
                 entity.HasOne(d => d.Color)
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.ColorId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Products_Colors");
 
                 entity.HasOne(d => d.Size)
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.SizeId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Products_Sizes");
             });
 
             modelBuilder.Entity<Size>(entity =>
             {
+                entity.Property(e => e.IdUser).HasColumnName("ID_User");
+
                 entity.Property(e => e.SizeName).HasMaxLength(30);
+
+                entity.HasOne(d => d.IdUserNavigation)
+                    .WithMany(p => p.Sizes)
+                    .HasForeignKey(d => d.IdUser)
+                    .OnDelete(DeleteBehavior.SetNull)
+                    .HasConstraintName("FK_Sizes_User");
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.HasKey(e => e.IdUser);
+
+                entity.ToTable("User");
+
+                entity.Property(e => e.IdUser).HasColumnName("ID_User");
+
+                entity.Property(e => e.Avatar)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.Email)
+                    .IsRequired()
+                    .HasMaxLength(50);
+
+                entity.Property(e => e.Name)
+                    .IsRequired()
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
+
+                entity.Property(e => e.Password)
+                    .IsRequired()
+                    .HasMaxLength(11)
+                    .IsUnicode(false);
+
+                entity.Property(e => e.Phone)
+                    .HasMaxLength(10)
+                    .IsFixedLength(true);
             });
 
             OnModelCreatingPartial(modelBuilder);

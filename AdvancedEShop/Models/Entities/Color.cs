@@ -14,7 +14,9 @@ namespace AdvancedEShop.Models.Entities
 
         public int ColorId { get; set; }
         public string ColorName { get; set; }
+        public int? IdUser { get; set; }
 
+        public virtual User IdUserNavigation { get; set; }
         public virtual ICollection<Product> Products { get; set; }
     }
 }
