@@ -1,4 +1,22 @@
-﻿<!-- Featured Start -->
+﻿@using Microsoft.AspNetCore.Http
+@{
+    var User = Context.Session.GetString("User");
+    if (User != null)
+    {
+        Layout = "~/Views/Shared/_Layout.cshtml";
+    }
+    var Admin = Context.Session.GetString("Admin");
+    if (Admin != null)
+    {
+        Context.Response.Redirect("/Users/Index");
+    }
+    if (User == null && Admin == null)
+    {
+        Context.Response.Redirect("/Authorization/SignIn");
+    }
+}
+
+<!-- Featured Start -->
 <div class="container-fluid pt-5">
     <div class="row px-xl-5 pb-3">
         <div class="col-lg-3 col-md-6 col-sm-12 pb-1">

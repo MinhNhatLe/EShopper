@@ -1,5 +1,21 @@
 ﻿@model IEnumerable<AdvancedEShop.Models.Entities.Category>
-
+@using Microsoft.AspNetCore.Http
+@{
+    var User = Context.Session.GetString("User");
+    if (User != null)
+    {
+        Context.Response.Redirect("/Home/Index");
+    }
+    var Admin = Context.Session.GetString("Admin");
+    if (Admin != null)
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    if (User == null && Admin == null)
+    {
+        Context.Response.Redirect("/Authorization/SignIn");
+    }
+}
 @{
     ViewData["Title"] = "Index";
 }
@@ -25,23 +41,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryName)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryPhoto)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.CategoryOder)
-            </td>
-            <td>
-                <a asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a> |
-                <a asp-action="Details" asp-route-id="@item.CategoryId">Details</a> |
-                <a asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryPhoto)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.CategoryOder)
+                </td>
+                <td>
+                    <a asp-action="Edit" asp-route-id="@item.CategoryId">Edit</a> |
+                    <a asp-action="Details" asp-route-id="@item.CategoryId">Details</a> |
+                    <a asp-action="Delete" asp-route-id="@item.CategoryId">Delete</a>
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

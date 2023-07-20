@@ -1,5 +1,21 @@
 ﻿@model AdvancedEShop.Models.Entities.User
-
+@using Microsoft.AspNetCore.Http
+@{
+    var User = Context.Session.GetString("User");
+    if (User != null)
+    {
+        Context.Response.Redirect("/Home/Index");
+    }
+    var Admin = Context.Session.GetString("Admin");
+    if (Admin != null)
+    {
+        Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+    }
+    if (User == null && Admin == null)
+    {
+        Context.Response.Redirect("/Authorization/SignIn");
+    }
+}
 @{
     ViewData["Title"] = "Edit";
 }

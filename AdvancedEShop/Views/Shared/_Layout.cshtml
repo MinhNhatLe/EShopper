@@ -60,7 +60,7 @@
         </div>
         <div class="row align-items-center py-3 px-xl-5">
             <div class="col-lg-3 d-none d-lg-block">
-                <a href="" class="text-decoration-none">
+                <a href="/Home/Index" class="text-decoration-none">
                     <h1 class="m-0 display-5 font-weight-semi-bold"><span class="text-primary font-weight-bold border px-3 mr-1">E</span>Shopper</h1>
                 </a>
             </div>
@@ -83,7 +83,7 @@
                     <span class="badge">0</span>
                 </a>
                 @await Component.InvokeAsync("CartWidget")
-                
+
             </div>
         </div>
     </div>
@@ -104,8 +104,8 @@
                     </button>
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto py-0">
-                            <a href="/" class="nav-item nav-link active">Home</a>
-                            <a href="/Products" class="nav-item nav-link">Shop</a>
+                            <a href="/Home/Index" class="nav-item nav-link active">Home</a>
+                            <a href="/Products/Index" class="nav-item nav-link">Shop</a>
                             <a href="detail.html" class="nav-item nav-link">Shop Detail</a>
                             <div class="nav-item dropdown">
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
@@ -118,8 +118,14 @@
                         </div>
                         <div class="navbar-nav ml-auto py-0">
                             @*<partial name="_LoginPartial"/>*@
-                            <a href="/Authorization/SignIn" class="nav-item nav-link">Login</a>
-                            <a href="/Users/Create" class="nav-item nav-link">Register</a>
+                            @*<a href="/Authorization/SignIn" class="nav-item nav-link">Login</a>
+                                <a href="/Users/Create" class="nav-item nav-link">Register</a>*@
+                            @using Microsoft.AspNetCore.Http
+                            <a href="" class="nav-item nav-link">
+                                <span>Hello @Context.Session.GetString("Name")!</span>
+
+                            </a>
+                            <a href="@Url.Action("Logout", "Authorization")" class="nav-item nav-link">Log out</a>
                         </div>
                     </div>
                 </nav>
@@ -161,11 +167,11 @@
         </div>
     </div>
     <!-- Navbar End -->
-    
+
 
 
     @RenderBody()
-    
+
 
 
     <!-- Footer Start -->

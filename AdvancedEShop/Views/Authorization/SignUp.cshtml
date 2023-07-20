@@ -1,7 +1,7 @@
 ﻿@model AdvancedEShop.Models.Entities.User
 
 @{
-    ViewData["Title"] = "SignIn";
+    ViewData["Title"] = "Rigister";
     Layout = null;
 }
 <!doctype html>
@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="/login/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/login/css/bootstrap.min.css">
     <link rel="stylesheet" href="/login/css/style.css">
-    <title>SignIn</title>
+    <title>Register</title>
 </head>
 <body>
     <div class="d-lg-flex half">
@@ -25,10 +25,21 @@
                 <div class="row align-items-center justify-content-center">
                     <div class="col-md-7">
                         <div class="mb-4">
-                            <h3>SignIn</h3>
+                            <h3>Register</h3>
                             <p class="mb-4">Hello everyone. Welcome to E-Shopper</p>
                         </div>
-                        <form asp-action="SignIn">
+                        <form asp-action="SignUp">
+                            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                            <div class="form-group first">
+                                <label for="username" asp-for="Name">Name</label>
+                                <input type="text" class="form-control" id="username" asp-for="Name">
+                                <span asp-validation-for="Name" class="text-danger"></span>
+                            </div>
+                            <div class="form-group first">
+                                <label for="username" asp-for="Phone">Phone</label>
+                                <input type="text" class="form-control" id="username" asp-for="Phone">
+                                <span asp-validation-for="Phone" class="text-danger"></span>
+                            </div>
                             <div class="form-group first">
                                 <label for="username" asp-for="Email">Email</label>
                                 <input type="text" class="form-control" id="username" asp-for="Email">
@@ -39,31 +50,10 @@
                                 <input type="password" class="form-control" id="password" asp-for="Password">
                                 <span asp-validation-for="Password" class="text-danger"></span>
                             </div>
-
                             <div class="d-flex mb-5 align-items-center">
-                                <label class="control control--checkbox mb-0">
-                                    <span class="caption">Remember me</span>
-                                    <input type="checkbox" checked="checked" />
-                                    <div class="control__indicator"></div>
-                                </label>
-                                <span class="ml-auto"><a href="/Authorization/SignUp" class="forgot-pass">Register</a></span>
+                                <span class="ml-auto"><a href="/Authorization/SignIn" class="forgot-pass">Back to login page</a></span>
                             </div>
-
-                            <input type="submit" value="Log In" class="btn btn-block btn-primary">
-
-                            <span class="d-block text-center my-4 text-muted">&mdash; or &mdash;</span>
-
-                            <div class="social-login">
-                                <a href="#" class="facebook btn d-flex justify-content-center align-items-center">
-                                    <span class="icon-facebook mr-3"></span> Login with Facebook
-                                </a>
-                                <a href="#" class="twitter btn d-flex justify-content-center align-items-center">
-                                    <span class="icon-twitter mr-3"></span> Login with  Twitter
-                                </a>
-                                <a href="#" class="google btn d-flex justify-content-center align-items-center">
-                                    <span class="icon-google mr-3"></span> Login with  Google
-                                </a>
-                            </div>
+                            <input type="submit" value="Register" class="btn btn-block btn-primary">
                         </form>
                     </div>
                 </div>
