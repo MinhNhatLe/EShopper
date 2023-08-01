@@ -28,7 +28,9 @@ using AdvancedEShop.Models;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"f48c4fe1047979ee3e55a5f60eb33c071c6c4e7d", @"/Views/Products/Details.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"46298634653a976947a73d18a05c65b0023e47bc", @"/Views/_ViewImports.cshtml")]
+    #nullable restore
     public class Views_Products_Details : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<AdvancedEShop.Models.Entities.Product>
+    #nullable disable
     {
         #line hidden
         #pragma warning disable 0649
@@ -155,7 +157,7 @@ WriteAttributeValue("", 970, Model.ProductPhoto, 970, 19, false);
 #line hidden
 #nullable disable
             WriteLiteral("</p>\r\n            <div class=\"d-flex mb-3\">\r\n                <p class=\"text-dark font-weight-medium mb-0 mr-3\">Sizes:</p>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f48c4fe1047979ee3e55a5f60eb33c071c6c4e7d7601", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f48c4fe1047979ee3e55a5f60eb33c071c6c4e7d7647", async() => {
                 WriteLiteral(@"
                     <div class=""custom-control custom-radio custom-control-inline"">
                         <input type=""radio"" class=""custom-control-input"" id=""size-1"" name=""size"">
@@ -193,7 +195,7 @@ WriteAttributeValue("", 970, Model.ProductPhoto, 970, 19, false);
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            </div>\r\n            <div class=\"d-flex mb-4\">\r\n                <p class=\"text-dark font-weight-medium mb-0 mr-3\">Colors:</p>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f48c4fe1047979ee3e55a5f60eb33c071c6c4e7d10599", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f48c4fe1047979ee3e55a5f60eb33c071c6c4e7d10645", async() => {
                 WriteLiteral(@"
                     <div class=""custom-control custom-radio custom-control-inline"">
                         <input type=""radio"" class=""custom-control-input"" id=""color-1"" name=""color"">
@@ -361,7 +363,7 @@ WriteAttributeValue("", 970, Model.ProductPhoto, 970, 19, false);
                                 </div>
                             </div>
                             ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f48c4fe1047979ee3e55a5f60eb33c071c6c4e7d22791", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "f48c4fe1047979ee3e55a5f60eb33c071c6c4e7d22837", async() => {
                 WriteLiteral(@"
                                 <div class=""form-group"">
                                     <label for=""message"">Your Review *</label>
@@ -403,16 +405,26 @@ Write(await Component.InvokeAsync("ProductsStart"));
             WriteLiteral("\r\n<!-- Products End -->\r\n");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<AdvancedEShop.Models.Entities.Product> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<AdvancedEShop.Models.Entities.Product> Html { get; private set; } = default!;
+        #nullable disable
     }
 }
 #pragma warning restore 1591

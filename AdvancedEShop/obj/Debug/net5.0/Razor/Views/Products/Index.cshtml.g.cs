@@ -42,7 +42,9 @@ using Microsoft.AspNetCore.Http;
 #nullable disable
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"74be381eac5a412e0836214ef2a34cb4202c6a18", @"/Views/Products/Index.cshtml")]
     [global::Microsoft.AspNetCore.Razor.Hosting.RazorSourceChecksumAttribute(@"SHA1", @"46298634653a976947a73d18a05c65b0023e47bc", @"/Views/_ViewImports.cshtml")]
+    #nullable restore
     public class Views_Products_Index : global::Microsoft.AspNetCore.Mvc.Razor.RazorPage<ProductListViewModels>
+    #nullable disable
     {
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_0 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("price-filter-form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
         private static readonly global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute __tagHelperAttribute_1 = new global::Microsoft.AspNetCore.Razor.TagHelpers.TagHelperAttribute("id", new global::Microsoft.AspNetCore.Html.HtmlString("color-filter-form"), global::Microsoft.AspNetCore.Razor.TagHelpers.HtmlAttributeValueStyle.DoubleQuotes);
@@ -126,7 +128,7 @@ using Microsoft.AspNetCore.Http;
             <div class=""border-bottom mb-4 pb-4"">
                 <h5 class=""font-weight-semi-bold mb-4"">Filter by price</h5>
                 ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74be381eac5a412e0836214ef2a34cb4202c6a186469", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74be381eac5a412e0836214ef2a34cb4202c6a186515", async() => {
                 WriteLiteral(@"
                     <div class=""custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3"">
                         <input type=""checkbox"" class=""custom-control-input"" val=""all"" checked id=""price-all"">
@@ -176,7 +178,7 @@ using Microsoft.AspNetCore.Http;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            </div>\r\n            <!-- Price End -->\r\n            <!-- Color Start -->\r\n            <div class=\"border-bottom mb-4 pb-4\">\r\n                <h5 class=\"font-weight-semi-bold mb-4\">Filter by color</h5>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74be381eac5a412e0836214ef2a34cb4202c6a1810794", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74be381eac5a412e0836214ef2a34cb4202c6a1810840", async() => {
                 WriteLiteral(@"
                     <div class=""custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3"">
                         <input type=""checkbox"" class=""custom-control-input"" val=""all"" checked id=""color-all"">
@@ -226,7 +228,7 @@ using Microsoft.AspNetCore.Http;
             Write(__tagHelperExecutionContext.Output);
             __tagHelperExecutionContext = __tagHelperScopeManager.End();
             WriteLiteral("\r\n            </div>\r\n            <!-- Color End -->\r\n            <!-- Size Start -->\r\n            <div class=\"mb-5\">\r\n                <h5 class=\"font-weight-semi-bold mb-4\">Filter by size</h5>\r\n                ");
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74be381eac5a412e0836214ef2a34cb4202c6a1815057", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "74be381eac5a412e0836214ef2a34cb4202c6a1815103", async() => {
                 WriteLiteral(@"
                     <div class=""custom-control custom-checkbox d-flex align-items-center justify-content-between mb-3"">
                         <input type=""checkbox"" class=""custom-control-input"" val=""all"" checked id=""size-all"">
@@ -521,16 +523,26 @@ WriteAttributeValue("", 14063, i, 14063, 2, false);
 ");
         }
         #pragma warning restore 1998
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.ViewFeatures.IModelExpressionProvider ModelExpressionProvider { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IUrlHelper Url { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.IViewComponentHelper Component { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IJsonHelper Json { get; private set; } = default!;
+        #nullable disable
+        #nullable restore
         [global::Microsoft.AspNetCore.Mvc.Razor.Internal.RazorInjectAttribute]
-        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<ProductListViewModels> Html { get; private set; }
+        public global::Microsoft.AspNetCore.Mvc.Rendering.IHtmlHelper<ProductListViewModels> Html { get; private set; } = default!;
+        #nullable disable
     }
 }
 #pragma warning restore 1591

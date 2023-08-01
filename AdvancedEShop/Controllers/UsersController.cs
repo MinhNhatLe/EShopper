@@ -6,6 +6,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using AdvancedEShop.Models.Entities;
+using Microsoft.Extensions.Logging;
 
 namespace AdvancedEShop.Controllers
 {
@@ -13,9 +14,12 @@ namespace AdvancedEShop.Controllers
     {
         private readonly AdvancedEshopContext _context;
 
-        public UsersController(AdvancedEshopContext context)
+        private readonly ILogger<UsersController> _users;
+
+        public UsersController(AdvancedEshopContext context, ILogger<UsersController> users)
         {
             _context = context;
+            _users = users;
         }
 
         // GET: Users

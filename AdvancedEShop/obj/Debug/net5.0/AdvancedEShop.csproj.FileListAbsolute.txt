@@ -5,7 +5,6 @@ C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\Advanced
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\AdvancedEShop.runtimeconfig.json
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\AdvancedEShop.runtimeconfig.dev.json
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\AdvancedEShop.dll
-C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\ref\AdvancedEShop.dll
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\AdvancedEShop.pdb
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\AdvancedEShop.Views.dll
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\AdvancedEShop.Views.pdb
@@ -18,7 +17,6 @@ C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Advanced
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\AdvancedEShop.RazorAssemblyInfo.cache
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\AdvancedEShop.RazorAssemblyInfo.cs
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\staticwebassets\AdvancedEShop.StaticWebAssets.Manifest.cache
-C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\staticwebassets\AdvancedEShop.StaticWebAssets.xml
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\scopedcss\bundle\AdvancedEShop.styles.css
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\AdvancedEShop.TagHelpers.input.cache
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\AdvancedEShop.TagHelpers.output.cache
@@ -173,3 +171,10 @@ C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Vi
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Authorization\SignIn.cshtml.g.cs
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Authorization\SignUp.cshtml.g.cs
 C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\Razor\Views\Shared\_LayoutAdmin.cshtml.g.cs
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\bin\Debug\net5.0\AdvancedEShop.StaticWebAssets.xml
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\staticwebassets\AdvancedEShop.StaticWebAssets.Pack.cache
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\staticwebassets\msbuild.AdvancedEShop.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\staticwebassets\msbuild.build.AdvancedEShop.props
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\staticwebassets\msbuild.buildMultiTargeting.AdvancedEShop.props
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\staticwebassets\msbuild.buildTransitive.AdvancedEShop.props
+C:\Users\Minh Nhat\Desktop\AdvancedEShop\AdvancedEShop\obj\Debug\net5.0\refint\AdvancedEShop.dll
